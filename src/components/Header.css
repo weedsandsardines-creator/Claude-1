@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.header-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: var(--text);
+}
+
+.header-inspiration {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text-soft);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.nav-btn:hover {
+  background: var(--bg);
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+.header-week-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  min-width: 160px;
+  text-align: center;
+}
+
+.today-btn {
+  font-size: 12px;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text-soft);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.today-btn:hover {
+  background: var(--text);
+  color: var(--surface);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-hint {
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.2px;
+}

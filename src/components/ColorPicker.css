@@ -1,0 +1,39 @@
+.color-picker-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+
+.color-picker {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px;
+  box-shadow: var(--shadow-lg);
+  z-index: 1001;
+}
+
+.color-picker-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+.color-dot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.color-dot:hover {
+  transform: scale(1.2);
+}
+
+.color-dot.active {
+  border-color: var(--text) !important;
+  box-shadow: 0 0 0 2px var(--surface), 0 0 0 3px var(--text-muted);
+}
